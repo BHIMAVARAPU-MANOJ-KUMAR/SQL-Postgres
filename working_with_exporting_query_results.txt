@@ -1,0 +1,3 @@
+To copy the Query results to a client host, use \copy command. 
+
+\copy (SELECT * FROM person LEFT JOIN cardata ON cardata.id = person.id) TO '/Users/Sraddha/Downloads/results_query.csv' DELIMITER ',' CSV HEADER;

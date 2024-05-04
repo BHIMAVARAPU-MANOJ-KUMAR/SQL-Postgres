@@ -1,0 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE students (student_uid UUID NOT NULL PRIMARY KEY, name VARCHAR(100) NOT NULL);
+
+INSERT INTO students(student_uid, name) VALUES(uuid_generate_v4(), "Manoj Kumar");
